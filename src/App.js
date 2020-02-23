@@ -56,7 +56,7 @@ class App extends Component {
               <tbody>
                 {this.state.users.map(board =>
                   <tr key={board.key}>
-                    <td><Link to={`/show/${board.key}`}>{board.uid}</Link></td>
+                    <td><Link to={`/show/${board.key}`}>{board.name}</Link></td>
                     <td>{board.description}</td>
                     <td>{board.uid}</td>
                   </tr>

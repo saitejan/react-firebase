@@ -56,15 +56,15 @@ class Create extends Component {
             <h4><Link to="/" className="btn btn-primary">Users List</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
-                <label for="title">Name:</label>
+                <label htmlFor="title">Name:</label>
                 <input type="text" className="form-control" name="name" value={name} onChange={this.onChange} placeholder="Title" />
               </div>
               <div className="form-group">
-                <label for="description">Description:</label>
+                <label htmlFor="description">Description:</label>
                 <textArea className="form-control" name="description" onChange={this.onChange} placeholder="Description" cols="80" rows="3">{description}</textArea>
               </div>
               <div className="form-group">
-                <label for="author">Id:</label>
+                <label htmlFor="author">Id:</label>
                 <input type="number" className="form-control" name="uid" value={uid} onChange={this.onChange} placeholder="Id" />
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
